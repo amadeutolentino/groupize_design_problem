@@ -1,16 +1,20 @@
-<h1>Kitchen Snack Central</h1>
-<p>These are the snacks we keep in the company kitchen. Enjoy!</p>
-<span>Don't see anything you like?</span>
-<%= link_to "Request a New Snack", new_snack_path %>
+<div class="container">
+
+<h1>KITCHEN SNACK CENTRAL</h1>
+<p class="tagline">These are the snacks we keep in the company kitchen. Enjoy!</p>
+<div class="main-action">
+<span>Don't see anything you like? Request a new Snack!</span>
+<%= link_to "Request Snack", "#", :id => "newsnack", :class => "button" %>
+</div>
 
 <table>
   <thead>
-    <th>
-      <td></td>
+		<tr>
+      <td>Name</td>
       <td>Time to next refill</td>
       <td>Calories</td>
       <td>About</td>
-    </th>
+		</tr>
   </thead>
   <tbody>
     <% @snacks.each do |snack| %>
@@ -23,3 +27,18 @@
     <% end %>
   </tbody>
 </table>
+<a href="#" style="float:right;">back to top</a>
+
+<div id="dialog">
+	<div class="form_inner">
+		<h1>Request a New Snack</h1>
+		<p>We can't promise we'll get it, but suggest a snack and we'll do our best!</p>
+		<p>Sincerely,</p>
+		<p>Your Admin Team</p>
+		<%= render partial: 'form', locals: { include_date: false } %>
+	</div>
+</div>
+
+
+
+</div>

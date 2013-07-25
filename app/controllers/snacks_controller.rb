@@ -18,6 +18,7 @@ class SnacksController < ApplicationController
 
   def index
     @snacks = Snack.all
+    @snack = Snack.new
   end
 
   def edit
