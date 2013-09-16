@@ -1,5 +1,5 @@
 class Snack < ActiveRecord::Base
-  attr_accessible :calories, :description, :last_restock_date, :name, :restock_frequency_days
+  attr_accessible :calories, :description, :last_restock_date, :name, :restock_frequency_days, :image_file_name
 
   def remaining_days
     if restock_frequency_days

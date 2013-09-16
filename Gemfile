@@ -16,15 +16,21 @@ end
 group :assets do
   gem 'sass-rails',   '~> 3.2.3'
   gem 'coffee-rails', '~> 3.2.1'
+  gem 'font-awesome-rails'
 
   # See https://github.com/sstephenson/execjs#readme for more supported runtimes
   # gem 'therubyracer', :platforms => :ruby
 
   gem 'uglifier', '>= 1.0.3'
+   # Add Foundation Here
+  gem 'compass-rails' # you need this or you get an err
+  gem 'zurb-foundation', '~> 4.0.0'
 end
 
 gem 'jquery-rails'
 gem 'simple_form'
+gem 'jquery-ui-rails'
+gem 'jquery-ui-themes'
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'

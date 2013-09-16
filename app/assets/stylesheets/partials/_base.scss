@@ -1,0 +1,29 @@
+//-----------------------------------------
+// Variables come first
+//-----------------------------------------
+
+$grey: #333433;
+$green: #94c04b;
+$darkgreen: #83ab42;
+$lightgrey: #e1e1e1;
+$greyfield: #2e2e2e;
+$white: #fff;
+$aletblue: #2c3e50;
+$red: #c0392b;
+
+
+//-----------------------------------------
+// Compass Imports
+//-----------------------------------------
+
+@import "compass/reset";
+@import "compass/css3";
+@import "compass/css3/user-interface";
+@import "compass/utilities";
+@import "compass/css3/shared";
+
+//-----------------------------------------
+// Font Awesome
+//-----------------------------------------
+
+@import "font-awesome";

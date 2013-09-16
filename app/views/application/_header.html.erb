@@ -1,7 +1,7 @@
-<%= content_tag :header, class: "header" do %>
-  <%= content_tag :div do %>
-    <%= link_to root_path do %>			
-      	<h1 class="logo" data-role="logo">SnackCentral</h1>
-    <% end %>
-  <% end %>
-<% end %>
+<%=	 render 'application/flash_notice' %>
+<div class="top-strip"></div>
+  <div class="row">
+   <div class="app-branding">
+     <h1 class="logo" data-role="logo"><%=link_to "Snack<br />Central".html_safe, root_path %> </h1>
+   </div>
+</div>

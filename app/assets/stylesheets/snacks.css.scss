@@ -1,123 +1,120 @@
 // Place all the styles related to the SnacksController controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+//
 
+//-----------------------------------------
+// Not used, App Original Style
+//-----------------------------------------
 
-$grey: #333433;
-$green: #94c04b;
-$darkgreen: #83ab42;
-$lightgrey: #3e3e3e;
-$greyfield: #2e2e2e;
-
-
-
+/*
 body {
-	margin:0;
-	padding:0;
-	font : .875em/1.313em "Helvetica Neue", Helvetica, sans-serif;
-	color:white;
-background: linear-gradient(45deg, $lightgrey 25%,
-    $grey 25%, $grey 50%, 
-    $lightgrey 50%, $lightgrey 75%, 
+  margin:0;
+  padding:0;
+  font : .875em/1.313em "Helvetica Neue", Helvetica, sans-serif;
+  color:white;
+  background: linear-gradient(45deg, $lightgrey 25%,
+    $grey 25%, $grey 50%,
+    $lightgrey 50%, $lightgrey 75%,
     $grey 75%);
-background-size:10px 10px;
+  background-size:10px 10px;
 }
 
 a {
-text-decoration:none;
-color:$green;
-font-weight:500;
+  text-decoration:none;
+  color:$green;
+  font-weight:500;
 }
 
 p {
-font-color:$grey;
-text-shadow:0 1px 0 #fff;
+  font-color:$grey;
+  text-shadow:0 1px 0 #fff;
 }
 
 p.tagline {
-	color : white;
-	text-shadow:0 1px 0 #000;
-	font-family: 'Playball', cursive;
-	font-weight: 500;
-	font-size:1.4em;
-	letter-spacing:.09em;
-	text-align:center;
-	margin-top:-10px;
+  color : white;
+  text-shadow:0 1px 0 #000;
+  font-family: 'Playball', cursive;
+  font-weight: 500;
+  font-size:1.4em;
+  letter-spacing:.09em;
+  text-align:center;
+  margin-top:-10px;
 }
 
 table {
-	width:100%;
-	padding:0;
-	margin:0 0 8px 0;
-	background-color:$grey;
+  width:100%;
+  padding:0;
+  margin:0 0 8px 0;
+  background-color:$grey;
 }
 
 tr, th {
-margin:0;
+  margin:0;
 }
 
 td {
-margin:0;
-padding: 12px 18px;
-background-color:$greyfield;
+  margin:0;
+  padding: 12px 18px;
+  background-color:$greyfield;
 }
 
 h1 {
-	color:white;
-	font-family: "Helvetica Neue", Helvetica, sans-serif;
-	font-weight: 100;
-	letter-spacing:.08em;
-	line-height:.8em;
-	font-size:3em;
-	text-align:center;
-	text-shadow:0 1px 0 #000;
+  color:white;
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+  font-weight: 100;
+  letter-spacing:.08em;
+  line-height:.8em;
+  font-size:3em;
+  text-align:center;
+  text-shadow:0 1px 0 #000;
 }
 
 h2{
-	color: $green;
-	font-family: "Helvetica Neue", Helvetica, sans-serif;
-	font-weight: light;
-	font-size:2.4em;
+  color: $green;
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+  font-weight: light;
+  font-size:2.4em;
 }
 
 h1.logo {
-	color : white;
-	text-shadow:0 1px 0 $darkgreen;
-	font-family: 'Playball', cursive;
-	font-weight: normal;
-	width:220px;
-	font-size:1.8em;
-	text-align:center;
-	padding:12px 0 16px;
-	margin:0;
-	background-color:$green;
+  color : white;
+  text-shadow:0 1px 0 $darkgreen;
+  font-family: 'Playball', cursive;
+  font-weight: normal;
+  width:220px;
+  font-size:1.8em;
+  text-align:center;
+  padding:12px 0 16px;
+  margin:0;
+  background-color:$green;
 }
 
 header {
-	width: 100%;
-	border-top:4px solid $green;
+  width: 100%;
+  border-top:4px solid $green;
 }
 
 .container {
-	position:relative; 
-	width:75%;
-	margin:0 auto 30px auto;
-	padding:0;
+  position:relative;
+  width:75%;
+  margin:0 auto 30px auto;
+  padding:0;
 }
 
 span {
-font-size:1.3em; 
-margin:20px 18px 0 18px;
-float:left;
-color:$green;
+  font-size:1.3em;
+  margin:20px 18px 0 18px;
+  float:left;
+  color:$green;
 }
 
 .main-action {
-background-color:$grey;
-margin-top:42px;
-width:100%;
-height:52px;
-display:block;
+  background-color:$grey;
+  margin-top:42px;
+  width:100%;
+  height:52px;
+  display:block;
 }
 
 input[type="text"],
@@ -125,101 +122,101 @@ input[type="password"],
 input[type="check"],
 input[type="email"],
 textarea {
-width:200px;
-display:inline-block;
-margin:5px 10px 0;
-text-align:top;
+  width:200px;
+  display:inline-block;
+  margin:5px 10px 0;
+  text-align:top;
 }
 
 input[type="submit"] {
-box-shadow: none;
--moz-box-shadow: none;
--webkit-box-shadow: none;
-border:none;
-padding:0;
+  box-shadow: none;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  border:none;
+  padding:0;
 }
 input[type="submit"], a.button {
-	color:white;
-	font-family : "Helvetica Neue", Helvetica, sans-serif;
-	font-weight : bold;
-	font-size:1em;
-	text-shadow:0 1px 0 $darkgreen;
-	padding: 10px 20px;
-	background-color:$green;
-	text-decoration:none;
-	border-radius: 2px;
--moz-border-radius: 2px;
--webkit-border-radius: 2px;
-cursor: pointer;
+  color:white;
+  font-family : "Helvetica Neue", Helvetica, sans-serif;
+  font-weight : bold;
+  font-size:1em;
+  text-shadow:0 1px 0 $darkgreen;
+  padding: 10px 20px;
+  background-color:$green;
+  text-decoration:none;
+  border-radius: 2px;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  cursor: pointer;
 }
 
 a.button {
-float:right;
-margin:10px 18px 0 0;
+  float:right;
+  margin:10px 18px 0 0;
 }
 
 
 
 input[type="submit"]:hover, a:hover.button {
-background-color:$darkgreen;
+  background-color:$darkgreen;
 }
 
 .formblock {
-	width:600px;
-	margin:0 auto;
-	padding:0 8px;
-	background-color:white;
-	color:$grey;
-background-image: linear-gradient(transparent 50%, rgba($green,1) 50%);
-background-size: 12px 12px;
-border: 1px, solid #000;
-border-radius:4px;
--moz-box-shadow: 1px 2px 1px #000;
--webkit-box-shadow: 1px 2px 1px #000;
-box-shadow: 1px 2px 1px #000;
+  width:600px;
+  margin:0 auto;
+  padding:0 8px;
+  background-color:white;
+  color:$grey;
+  background-image: linear-gradient(transparent 50%, rgba($green,1) 50%);
+  background-size: 12px 12px;
+  border: 1px, solid #000;
+  border-radius:4px;
+  -moz-box-shadow: 1px 2px 1px #000;
+  -webkit-box-shadow: 1px 2px 1px #000;
+  box-shadow: 1px 2px 1px #000;
 }
 
 .form_inner {
-background-color:white;
-padding:0 20px;
+  background-color:white;
+  padding:0 20px;
 }
 
 .ui-dialog-titlebar {
-border:none;
-background:none;
+  border:none;
+  background:none;
 }
 
 .ui-dialog {
-background-color:white;
-padding:20px;
-background-image: linear-gradient(transparent 50%, rgba($green,1) 50%);
-background-size: 12px 12px;
-border: 1px, solid #000;
-border-radius:4px;
--moz-box-shadow: 1px 2px 3px #333;
--webkit-box-shadow: 1px 2px 3px #333;
-box-shadow: 1px 1px 3px #333;
+  background-color:white;
+  padding:20px;
+  background-image: linear-gradient(transparent 50%, rgba($green,1) 50%);
+  background-size: 12px 12px;
+  border: 1px, solid #000;
+  border-radius:4px;
+  -moz-box-shadow: 1px 2px 3px #333;
+  -webkit-box-shadow: 1px 2px 3px #333;
+  box-shadow: 1px 1px 3px #333;
 }
 
 .ui-dialog-titlebar {
-border:none;
-background:none;
-height:none;
-padding:0;
-margin:0;
+  border:none;
+  background:none;
+  height:none;
+  padding:0;
+  margin:0;
 }
 
 .ui-widget-overlay {
-opacity: .1;
+  opacity: .1;
 }
 
 .ui-widget-content {
-border:1px solid #000;
-background:white;
-color:none;
+  border:1px solid #000;
+  background:white;
+  color:none;
 }
 
 
-
+*/
 
 

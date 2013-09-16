@@ -1,0 +1,14 @@
+<% @snacks.each do |snack| %>
+    <ul class="card-wrapper">
+      <li class="card-image"><%= image_for(snack) %></li>
+      <li class="card-details">
+        <h3><%= link_to snack.name, edit_snack_path(snack) %></h3>
+        <p><%= snack.description %></p>
+      </li>
+      <li class="card-footer">
+        <span class="calories"><i class="icon-heart"></i> Calories: <%= snack.calories %></span>
+        <span class="refill-time"> <i class="icon-calendar"></i> Next refill: <%= snack.remaining_days %> (of <%= snack.restock_frequency_days %>)</span>
+        <span class="refill-time"> <%= link_to 'Remove', snack_path(snack), :class => 'button tiny secondary round', :method => :delete, :confirm => "Are you sure?" %></span>
+      </li>
+    </ul>
+<% end %>

@@ -1,0 +1,42 @@
+@import "base";
+
+ul.card-wrapper {
+
+    font-family: lato;
+    width: 261px;
+  	height: 372px;
+  	background-color: $white;
+  	float: left;
+    margin: 25px 25px 0 15px ;
+    text-align: center;
+    @include box-shadow(0 1px 3px rgba(0,0,0,.36));
+    @include clearfix;
+    @include border-radius(5px);
+
+    li.card-details {
+      min-height: 110px;
+
+      h3 {
+        color: $green;
+        font-size: 1em;
+        font-weight: 300;
+        line-height: 1em;
+      }
+      P{
+        font-size: 0.750em;
+        padding: 0 10px 0 10px;
+
+
+      }
+    }
+
+    li.card-footer {
+      font-size: 0.688em;
+      padding: 10px 0 0 0;
+      color: $green;
+      border-top: 1px solid $lightgrey;
+      span {
+        margin: 10px 6px 0 0 ;
+       }
+    }
+}
